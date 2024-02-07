@@ -1,7 +1,9 @@
 package Vista;
 
-public class View {
+import Ivew.Iview;
 
+public class View implements Iview {
+    @Override
     public void MuestraMenuPrincipal(){
         System.out.println("***********************************");
         System.out.println("1- añadir película. ");
