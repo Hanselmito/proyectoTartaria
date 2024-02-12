@@ -13,4 +13,12 @@ public class Controller implements IController {
         int opcion = View.leeEntero("elige una opcion");
         ControllerMuestraMenuPrincipal(opcion);
     }
+
+    @Override
+    public void ControllerMuestraMenuPrincipal (int o){
+        switch (o){
+            case 1:
+                break;
+        }
+    }
 }
