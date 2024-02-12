@@ -1,27 +1,17 @@
 package Modelo;
 
-public class Theme {
-    private String Nombre;
-    private int IDtheme;
+public class Theme extends Favorite{
+
     private String Clas;
 
+    public Theme(String nombre, int ID, String addFav, String clas) {
+        super(nombre, ID, addFav);
+        this.Clas = clas;
+    }
+
     public Theme() {
-    }
-
-    public String getNombre() {
-        return Nombre;
-    }
-
-    public void setNombre(String nombre) {
-        Nombre = nombre;
-    }
-
-    public int getIDtheme() {
-        return IDtheme;
-    }
-
-    public void setIDtheme(int IDtheme) {
-        this.IDtheme = IDtheme;
+        super();
+        Clas = "";
     }
 
     public String getClas() {
@@ -34,10 +24,6 @@ public class Theme {
 
     @Override
     public String toString() {
-        return "Theme{" +
-                "Nombre='" + Nombre + '\'' +
-                ", IDtheme=" + IDtheme +
-                ", Clas='" + Clas + '\'' +
-                '}';
+        return "Game: "+ Clas +super.toString()+".";
     }
 }

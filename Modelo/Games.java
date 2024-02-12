@@ -1,33 +1,16 @@
 package Modelo;
 
-public class Games {
-    private String Nombre;
-    private int IDgames;
+public class Games extends Favorite{
     private String Category;
 
+    public Games(String nombre, int ID, String addFav, String category) {
+        super(nombre, ID, addFav);
+        this.Category = category;
+    }
+
     public Games() {
-    }
-
-    public Games(String nombre, int IDgames, String category) {
-        Nombre = nombre;
-        this.IDgames = IDgames;
-        Category = category;
-    }
-
-    public String getNombre() {
-        return Nombre;
-    }
-
-    public void setNombre(String nombre) {
-        Nombre = nombre;
-    }
-
-    public int getIDgames() {
-        return IDgames;
-    }
-
-    public void setIDgames(int IDgames) {
-        this.IDgames = IDgames;
+        super();
+        Category = "";
     }
 
     public String getCategory() {
@@ -40,10 +23,6 @@ public class Games {
 
     @Override
     public String toString() {
-        return "Games{" +
-                "Nombre='" + Nombre + '\'' +
-                ", IDgames=" + IDgames +
-                ", Category='" + Category + '\'' +
-                '}';
+        return "Game: "+ Category +super.toString()+".";
     }
 }
