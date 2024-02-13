@@ -11,6 +11,11 @@ public class Controller implements IController {
     public void Star(){
         View.MuestraMenuPrincipal();
         int opcion = View.leeEntero("elige una opcion");
-        ControllerMuestraMenuPrincipal(opcion);
+        ControllerMuestraMenuPrincipal(opcion, View);
+    }
+
+    @Override
+    public void ControllerMuestraMenuPrincipal(int o, int Iview) {
+
     }
 }
