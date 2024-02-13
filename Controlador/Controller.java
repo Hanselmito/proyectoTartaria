@@ -3,6 +3,7 @@ package Controlador;
 import Ivew.IController;
 import Ivew.ILibrary;
 import Ivew.Iview;
+import Modelo.Favorite;
 
 public class Controller implements IController {
     Iview View;
